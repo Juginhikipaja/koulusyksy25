@@ -60,7 +60,7 @@ body.theme-index .sidebar .nav-link {
     color: #fff600;
     font-family: 'Audiowide', sans-serif;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
 }
 
 body.theme-index .nimi {
@@ -81,7 +81,7 @@ body.theme-index .sidebar-title {
     color: #fff600;
     font-family: 'Libre Barcode 128 text';
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 body.theme-portfolio .sidebar-title {
@@ -95,18 +95,23 @@ body.theme-portfolio .sidebar-title {
 @media (min-width: 1200px) {
     .sidebar { width: 280px; }
     main { margin-left: 280px; }
-    body.theme-index .sidebar .nav-link { font-size: 1.5rem; }
+    body.theme-index .sidebar .nav-link { font-size: 1.2rem; }
     body.theme-index .nimi { font-size: 2.4rem; }
+    body.theme-index .sidebar-title { font-size: 2.2rem; }
 }
 
 @media (min-width: 1920px) {
     .sidebar { width: 380px; }
     main { margin-left: 380px; }
+    body.theme-index .sidebar .nav-link { font-size: 1.8rem; }
     body.theme-index .nimi { font-size: 3rem; }
+    body.theme-index .sidebar-title { font-size: 2.9rem; }
 }
 
 @media (min-width: 2560px) {
     .sidebar { width: 500px; }
     main { margin-left: 500px; }
+    body.theme-index .sidebar .nav-link { font-size: 2.4rem; }
     body.theme-index .nimi { font-size: 3.5rem; }
+    body.theme-index .sidebar-title { font-size: 3.3rem; }
 }
