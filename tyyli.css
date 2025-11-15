@@ -64,8 +64,34 @@ body.theme-index {
 
 body.theme-index .mobile-header {
     color: #fff600;
+    background-color: #1a1a22;
     font-family: 'Libre Barcode 128 text';
     font-size: 2rem;
+}
+
+body.theme-index .mobile-bar {
+    background-color: #1a1a22;
+    font-family: 'Audiowide', sans-serif;
+    color: #fff600;
+    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600,  0 0 15px #ffb600;
+}
+
+body.theme-index .custom-hamburger {
+    background-color: #1a1a22;
+    color: #fff600;
+    font-size: 1.2rem;
+}
+
+body.theme-index .offcanvas-title {
+    color: #fff600;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 15px #ffb600;
+}
+
+body.theme-index .offcanvas-body a {
+    color: #fff600;
+    font-family: 'Audiowide', sans-serif;
 }
 
 body.theme-index .sidebar {
