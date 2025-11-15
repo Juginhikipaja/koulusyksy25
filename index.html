@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fi">
+    <head>
+        <title>Tietoja minusta</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="tyyli.css">
+    </head>
+    <body>
+        <!--mobile-header poistuu näkyvistä isommalla kuin 992px leveällä näytöllä-->
+        <div class="mobile-header d-lg-none">Web Developer Trainee</div>
+
+        <!--sama tässä mobiili menu poistuu näkyvistä isommalla kuin 992px leveällä näytöllä-->
+        <div class="mobile-bar d-lg-none">
+            <div>Jukka Palm</div>
+            <button class="btn custom-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                ☰
+            </button>
+        </div>
+
+        <!--offcanvas menu mobiilille-->
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Jukka Palm</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column gap-2">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Tietoja minusta</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Taidot & Ohjelmointi</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Tietovisa</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Terveystieto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="sidebar p-3 d-none d-lg-block">
+            <div class="nimi">Jukka Palm</div>
+            <div class="sidebar-title mb-3">Web Developer Trainee</div>
+
+            <ul class="nav flex-column gap-2">
+                <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-index')">Tietoja minusta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Taidot & Ohjelmointi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-portfolio')">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tietovisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Terveystieto</a></li>
+            </ul>
+        </nav>
+        <main class="flex-grow-1 p-4">
+            <h1>Tervetuloa!</h1>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <h1>Tervetuloa!</h1>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <h1>Tervetuloa!</h1>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <h1>Tervetuloa!</h1>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+            <p>Tähän tulee sivun varsinainen sisältö.</p>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

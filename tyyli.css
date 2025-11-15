@@ -1,0 +1,112 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+}
+
+main {
+    margin-left: 200px;
+}
+
+.mobile-header {
+    position: fixed;
+    top: 0; left: 0;
+    height: 50px; width: 100%;
+    background: #222;
+    z-index: 2000;
+    padding: 0 15px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.mobile-bar {
+    position: fixed;
+    top: 50px; left: 0;
+    width: 100%; height: 55px;
+    background: #333;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 15px;
+    z-index: 2000;
+    color: #fff;
+}
+
+.custom-hamburger {
+    background-color: #fff;
+    color: #222;
+    border: none;
+}
+
+#mobileMenu {
+    z-index: 2200;
+    top: 50px;
+}
+
+body.theme-index {
+    background-color: #0a0a0f;
+}
+
+body.theme-index .mobile-header {
+    color: #fff600;
+    font-family: 'Libre Barcode 128 text';
+    font-size: 2rem;
+}
+
+body.theme-index .sidebar {
+    background-color: #1a1a22;
+}
+
+body.theme-index .sidebar .nav-link {
+    color: #fff600;
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+body.theme-index .nimi {
+    color: #fff600;
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 20px #ffb600;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+body.theme-index .nimi:hover {
+    text-shadow: 0 0 10px #ffb600, 0 0 20px #ffb600, 0 0 40px #ffb600;
+}
+
+body.theme-index .sidebar-title {
+    color: #fff600;
+    font-family: 'Libre Barcode 128 text';
+    text-align: center;
+    font-size: 2rem;
+}
+
+body.theme-portfolio .sidebar-title {
+    color: #4b3621;
+}
+
+@media (max-width: 991px) {
+    main { margin-left: 0; margin-top: 105px; }
+}
+
+@media (min-width: 1200px) {
+    .sidebar { width: 280px; }
+    main { margin-left: 280px; }
+    body.theme-index .sidebar .nav-link { font-size: 1.5rem; }
+    body.theme-index .nimi { font-size: 2.4rem; }
+}
+
+@media (min-width: 1920px) {
+    .sidebar { width: 380px; }
+    main { margin-left: 380px; }
+    body.theme-index .nimi { font-size: 3rem; }
+}
+
+@media (min-width: 2560px) {
+    .sidebar { width: 500px; }
+    main { margin-left: 500px; }
+    body.theme-index .nimi { font-size: 3.5rem; }
+}
