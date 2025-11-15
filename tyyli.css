@@ -4,13 +4,26 @@
     left: 0;
     width: 200px;
     height: 100vh;
-    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     align-items: center;
     justify-content: space-between;
 }
 
 main {
     margin-left: 200px;
+}
+
+.some-linkit {
+    display: flex;
+}
+
+.some-linkit i {
+    font-size: 1rem;
+}
+
+.sidebar .nav-link {
+    border: 2px solid transparent;
 }
 
 .mobile-header {
@@ -57,6 +70,12 @@ body.theme-index .mobile-header {
 
 body.theme-index .sidebar {
     background-color: #1a1a22;
+    border-right: 2px solid #fff600;
+    box-shadow: 0 0 6px #fff600, 0 0 12px #fff600;
+}
+
+body.theme-index .sidebar .sidebar-top {
+    width: 90%;
 }
 
 body.theme-index .sidebar .nav-link {
@@ -64,13 +83,22 @@ body.theme-index .sidebar .nav-link {
     font-family: 'Audiowide', sans-serif;
     text-align: center;
     font-size: 0.7rem;
+    transform: scale(1);
+}
+
+body.theme-index .sidebar .nav-link:hover {
+    color: #b300ff;
+    border-top: 2px solid #b300ff;
+    border-bottom: 2px solid #b300ff;
+    transform: scale(1.1);
 }
 
 body.theme-index .nimi {
     color: #fff600;
     font-family: 'Audiowide', sans-serif;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
     text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 20px #ffb600;
     cursor: pointer;
     transition: text-shadow 0.3s ease;
@@ -87,6 +115,17 @@ body.theme-index .sidebar-title {
     font-size: 1.5rem;
 }
 
+body.theme-index .some-linkit i {
+    color: #00ffff;
+    transition: color 0.3s ease;
+}
+
+body.theme-index .some-linkit i:hover {
+    transform: scale(1.2);
+    color: #b300ff;
+
+}
+
 body.theme-portfolio .sidebar-title {
     color: #4b3621;
 }
@@ -100,21 +139,25 @@ body.theme-portfolio .sidebar-title {
     main { margin-left: 280px; }
     body.theme-index .sidebar .nav-link { font-size: 1.2rem; }
     body.theme-index .nimi { font-size: 2.4rem; }
-    body.theme-index .sidebar-title { font-size: 2.2rem; }
+    body.theme-index .sidebar-title { font-size: 2.2rem; margin-bottom: 1.5rem; }
+    body.theme-index .some-linkit i { font-size: 1.5rem; }
 }
 
 @media (min-width: 1920px) {
-    .sidebar { width: 380px; }
+    .sidebar { width: 380px; padding-top: 4rem; padding-bottom: 4rem; }
     main { margin-left: 380px; }
     body.theme-index .sidebar .nav-link { font-size: 1.8rem; }
-    body.theme-index .nimi { font-size: 3rem; }
+    body.theme-index .nimi { font-size: 3rem; margin-bottom: 2rem; }
     body.theme-index .sidebar-title { font-size: 2.9rem; }
+    body.theme-index .some-linkit i { font-size: 2rem; }
+    body.theme-index .sidebar { border-right: 4px solid #fff600; box-shadow: 0 0 8px #fff600, 0 0 16px #fff600; }
 }
 
 @media (min-width: 2560px) {
-    .sidebar { width: 500px; }
+    .sidebar { width: 500px; padding-bottom: 6rem;}
     main { margin-left: 500px; }
     body.theme-index .sidebar .nav-link { font-size: 2.4rem; }
     body.theme-index .nimi { font-size: 3.5rem; }
     body.theme-index .sidebar-title { font-size: 3.3rem; }
+    body.theme-index .some-linkit i { font-size: 2.5rem; }
 }
