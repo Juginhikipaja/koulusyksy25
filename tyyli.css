@@ -4,6 +4,9 @@
     left: 0;
     width: 200px;
     height: 100vh;
+    
+    align-items: center;
+    justify-content: space-between;
 }
 
 main {
