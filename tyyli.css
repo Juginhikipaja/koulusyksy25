@@ -114,8 +114,8 @@ body.theme-index .sidebar .nav-link {
 
 body.theme-index .sidebar .nav-link:hover {
     color: #b300ff;
-    border-top: 2px solid #b300ff;
-    border-bottom: 2px solid #b300ff;
+    border-top: 1px solid #b300ff;
+    border-bottom: 1px solid #b300ff;
     transform: scale(1.1);
 }
 
@@ -149,7 +149,6 @@ body.theme-index .some-linkit i {
 body.theme-index .some-linkit i:hover {
     transform: scale(1.2);
     color: #b300ff;
-
 }
 
 body.theme-portfolio {
@@ -203,6 +202,52 @@ body.theme-portfolio .some-linkit i {
 body.theme-portfolio .some-linkit i:hover {
     transform: scale(1.2);
     color: #bb7333;
+}
+
+body.theme-portfolio .mobile-header {
+    background-color: #3e4f2f;
+    color: #ede0c8;
+    text-shadow: 1px 1px 0 #c5b89c, -1px -1px 0 #fff9e6;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+}
+
+body.theme-portfolio .mobile-bar {
+    background-color: #3e4f2f;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #d4af37;
+    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+}
+
+body.theme-portfolio .custom-hamburger {
+    background-color: #3e4f2f;
+    color: #d4af37;
+    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+    font-size: 1.2rem;
+}
+
+body.theme-portfolio .offcanvas-title {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+body.theme-portfolio .offcanvas-body a {
+    color: #ede0c8;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 0 #c5b89c, -1px -1px 0 #fff9e6;
+}
+
+body.theme-portfolio .offcanvas-body {
+    background-color: #3e4f2f;
+}
+
+body.theme-portfolio .offcanvas-header {
+    background-color: #3e4f2f;
 }
 
 @media (max-width: 991px) {
