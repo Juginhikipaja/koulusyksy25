@@ -250,6 +250,14 @@ body.theme-portfolio .offcanvas-header {
     background-color: #3e4f2f;
 }
 
+body.theme-taidot {
+    background-image: url(images/taustakuva.png);
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 @media (max-width: 991px) {
     main { margin-left: 0; margin-top: 105px; }
 }
