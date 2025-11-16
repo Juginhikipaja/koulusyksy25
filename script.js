@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    vaihdaTeema('theme-index');
+    vaihdaTeema('theme-portfolio');
 });
 
 function vaihdaTeema(teema) {

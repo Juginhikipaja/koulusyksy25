@@ -152,8 +152,57 @@ body.theme-index .some-linkit i:hover {
 
 }
 
+body.theme-portfolio {
+    background-color: #4b3621;
+}
+
+body.theme-portfolio .sidebar {
+    background-color: #3e4f2f;
+    border-right: 3px solid #2b1f14;
+    box-shadow: inset -2px 0 6px rgba(0,0,0,0.6);
+}
+
+body.theme-portfolio .nimi{
+    font-family: 'Cinzel', serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #d4af37;
+    text-align: center;
+    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+}
+
 body.theme-portfolio .sidebar-title {
-    color: #4b3621;
+    color: #ede0c8;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.8rem;
+    text-shadow: 1px 1px 0 #c5b89c, -1px -1px 0 #fff9e6;
+}
+
+body.theme-portfolio .sidebar .nav-link {
+    color: #ede0c8;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+body.theme-portfolio .sidebar .nav-link:hover {
+    color: #bb7333;
+    transform: scale(1.1);
+    text-shadow: 0 1px 0 #00000090, 0 -1px 0 #ffd7a0
+}
+
+body.theme-portfolio .some-linkit i {
+    color: #ede0c8;
+    transition: color 0.3s ease;
+}
+
+body.theme-portfolio .some-linkit i:hover {
+    transform: scale(1.2);
+    color: #bb7333;
 }
 
 @media (max-width: 991px) {
@@ -167,6 +216,10 @@ body.theme-portfolio .sidebar-title {
     body.theme-index .nimi { font-size: 2.4rem; }
     body.theme-index .sidebar-title { font-size: 2.2rem; margin-bottom: 1.5rem; }
     body.theme-index .some-linkit i { font-size: 1.5rem; }
+    body.theme-portfolio .nimi { font-size: 2.4rem; }
+    body.theme-portfolio .sidebar-title {font-size: 1.3rem; }
+    body.theme-portfolio .sidebar .nav-link { font-size: 1.1rem; }
+    body.theme-portfolio .some-linkit i { font-size: 1.5rem; }
 }
 
 @media (min-width: 1920px) {
@@ -177,13 +230,21 @@ body.theme-portfolio .sidebar-title {
     body.theme-index .sidebar-title { font-size: 2.9rem; }
     body.theme-index .some-linkit i { font-size: 2rem; }
     body.theme-index .sidebar { border-right: 4px solid #fff600; box-shadow: 0 0 8px #fff600, 0 0 16px #fff600; }
+    body.theme-portfolio .nimi { font-size: 3.3rem; }
+    body.theme-portfolio .sidebar-title { font-size: 1.7rem; margin-bottom: 2.2rem; }
+    body.theme-portfolio .sidebar .nav-link { font-size: 1.5rem; }
+    body.theme-portfolio .some-linkit i { font-size: 2rem; }
 }
 
 @media (min-width: 2560px) {
     .sidebar { width: 500px; padding-bottom: 6rem;}
     main { margin-left: 500px; }
-    body.theme-index .sidebar .nav-link { font-size: 2.4rem; }
+    body.theme-index .sidebar .nav-link { font-size: 2.3rem; }
     body.theme-index .nimi { font-size: 3.5rem; }
     body.theme-index .sidebar-title { font-size: 3.3rem; }
     body.theme-index .some-linkit i { font-size: 2.5rem; }
+    body.theme-portfolio .nimi { font-size: 4rem; }
+    body.theme-portfolio .sidebar-title { font-size: 2.2rem; }
+    body.theme-portfolio .sidebar .nav-link { font-size: 2rem; }
+    body.theme-portfolio .some-linkit i { font-size: 2.5rem; }
 }
