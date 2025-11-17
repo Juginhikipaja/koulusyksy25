@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    vaihdaTeema('theme-taidot');
+    vaihdaTeema('theme-index');
 });
 
 function vaihdaTeema(teema) {

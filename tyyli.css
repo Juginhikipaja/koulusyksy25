@@ -318,6 +318,21 @@ body.theme-portfolio .offcanvas-body a {
     font-family: 'IM Fell English', serif;
 }
 
+#section-index h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #fff600;
+}
+
+#section-index .banner {
+    border: 2px solid #00ffff;
+}
+
+#section-index .banner-img {
+    justify-content: center;
+}
+
+
+
 
 
 @media (max-width: 991px) {
