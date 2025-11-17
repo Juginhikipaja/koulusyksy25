@@ -46,12 +46,29 @@ body.theme-portfolio .sidebar {
 }
 
 
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.sidebar-top .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 .nimi {
     text-align: center;
     cursor: pointer;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 body.theme-index .nimi {
     color: #fff600;
@@ -62,15 +79,12 @@ body.theme-index .nimi {
 body.theme-taidot .sidebar .nimi {
     font-family: 'Source Code Pro';
     color: #aab0b8;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
 }
 body.theme-portfolio .nimi{
     font-family: 'Playfair Display', serif;
     letter-spacing: 1.1;
     color: #d4af37;
     text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
-    margin-bottom: 2rem;
 }
 
 
@@ -83,22 +97,21 @@ body.theme-index .nimi:hover {
 
 .sidebar-title {
     text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 body.theme-index .sidebar-title {
     color: #fff600;
     font-family: 'Libre Barcode 128 text';
-    font-size: 1.5rem;
     text-shadow: 0 0 6px #fff600;
 }
 body.theme-taidot .sidebar-title {
     font-family: 'Source Code Pro';
     color: #aab0b8;
-    font-size: 1rem;
 }
 body.theme-portfolio .sidebar-title {
     color: #ede0c8;
     font-family: 'Playfair Display', serif;
-    font-size: 1rem;
 }
 
 
@@ -106,6 +119,7 @@ body.theme-portfolio .sidebar-title {
 .sidebar .nav-link {
     border: 2px solid transparent;
     text-align: center;
+    font-size: 0.8rem;
 }
 body.theme-index .sidebar .nav-link {
     color: #fff600;
@@ -138,6 +152,7 @@ body.theme-portfolio .sidebar .nav-link:hover {
 
 
 .some-linkit {
+    margin-top: auto;
     display: flex;
 }
 
@@ -291,9 +306,6 @@ body.theme-portfolio .offcanvas-body a {
     main { margin-left: 280px; }
     .sidebar { width: 280px; }
     .some-linkit i { font-size: 1.5rem; }
-    body.theme-index .sidebar .nimi { font-size: 2.6rem; }
-    body.theme-portfolio .sidebar .nimi { font-size: 2.6rem; }
-    body.theme-index .sidebar-title { font-size: 1.9rem; }
 }
 
 @media (min-width: 1920px) {
