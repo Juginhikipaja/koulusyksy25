@@ -13,8 +13,8 @@ function vaihdaTeema(teema) {
         case 'theme-index':
             document.getElementById('section-index').style.display = 'block';
             break;
-        case 'theme-taidot':
-            document.getElementById('section-taidot').style.display = 'block';
+        case 'theme-teknologiat':
+            document.getElementById('section-teknologiat').style.display = 'block';
             break;
         case 'theme-portfolio':
             document.getElementById('section-portfolio').style.display = 'block';

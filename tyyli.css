@@ -3,15 +3,17 @@ main {
 }
 
 
+
 body.theme-index {
     background-color: #0a0a0f;
 }
-body.theme-taidot {
+body.theme-teknologiat {
     background-image: url(images/piirilevy.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    z-index: -2;
 }
 body.theme-portfolio {
     background-color: #4b3621;
@@ -33,7 +35,7 @@ body.theme-index .mobile-header {
     font-family: 'Chakra Petch', sans-serif;
     text-shadow: 0 0 5px #fff600, 0 0 10px #fff600, 0 0 15px #fff600;
 }
-body.theme-taidot .mobile-header {
+body.theme-teknologiat .mobile-header {
     color: #aab0b8;
     font-family: 'Source Code Pro', monospace;
 }
@@ -60,7 +62,7 @@ body.theme-index .mobile-bar {
     color: #fff600;
     text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600,  0 0 15px #ffb600;
 }
-body.theme-taidot .mobile-bar {
+body.theme-teknologiat .mobile-bar {
     color: #aab0b8;
     font-family: 'Source Code Pro', monospace;
 }
@@ -82,7 +84,7 @@ body.theme-index .custom-hamburger {
     background-color: #1a1a22;
     color: #fff600;
 }
-body.theme-taidot .custom-hamburger {
+body.theme-teknologiat .custom-hamburger {
     background-color: transparent;
     color: #aab0b8;
 }
@@ -110,7 +112,7 @@ body.theme-index .offcanvas-title {
     font-family: 'Chakra Petch', sans-serif;
     text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 15px #ffb600;
 }
-body.theme-taidot .offcanvas-title {
+body.theme-teknologiat .offcanvas-title {
     color: #aab0b8;
     font-family: 'Source Code Pro', monospace;
 }
@@ -125,7 +127,7 @@ body.theme-index .offcanvas-body a {
     color: #fff600;
     font-family: 'Chakra Petch', sans-serif;
 }
-body.theme-taidot .offcanvas-body a {
+body.theme-teknologiat .offcanvas-body a {
     color: #aab0b8;
     font-family: 'Source Code Pro', monospace;
 }
@@ -159,9 +161,8 @@ body.theme-index .sidebar {
     border-right: 2px solid #fff600;
     box-shadow: 0 0 6px #fff600, 0 0 12px #fff600;
 }
-body.theme-taidot .sidebar {
-    background-color: #101218;
-    opacity: 0.5;
+body.theme-teknologiat .sidebar {
+    background-color: #10141c;
 }
 body.theme-portfolio .sidebar {
     background-color: #3e4f2f;
@@ -202,9 +203,9 @@ body.theme-index .sidebar .nimi {
     text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 20px #ffb600;
     transition: text-shadow 0.3s ease;
 }
-body.theme-taidot .sidebar .nimi {
+body.theme-teknologiat .sidebar .nimi {
     font-family: 'Source Code Pro', monospace;
-    color: #aab0b8;
+    color: #7fa6ff;
 }
 body.theme-portfolio .nimi{
     font-family: 'IM Fell English SC', serif;
@@ -228,9 +229,9 @@ body.theme-index .sidebar .titteli {
     color: #fff600;
     font-family: 'Chakra Petch', sans-serif;
 }
-body.theme-taidot .sidebar .titteli {
+body.theme-teknologiat .sidebar .titteli {
     font-family: 'Source Code Pro', monospace;
-    color: #aab0b8;
+    color: #afc6ff;
 }
 body.theme-portfolio .sidebar .titteli {
     color: #d4af37;
@@ -250,9 +251,9 @@ body.theme-index .sidebar .nav-link {
     color: #fff600;
     font-family: 'Chakra Petch', sans-serif;
 }
-body.theme-taidot .sidebar .nav-link {
+body.theme-teknologiat .sidebar .nav-link {
     font-family: 'Source Code Pro', monospace;
-    color: #aab0b8;
+    color: #c6d7f2;
 }
 body.theme-portfolio .sidebar .nav-link {
     color: #ede0c8;
@@ -269,6 +270,9 @@ body.theme-index .sidebar .nav-link:hover {
     color: #00ffff;
     border: 1px solid #00ffff;
     border-radius: 0.2rem;
+}
+body.theme-teknologiat .sidebar .nav-link:hover {
+    color: #89b5ff;
 }
 body.theme-portfolio .sidebar .nav-link:hover {
     color: #bb7333;
@@ -288,6 +292,9 @@ body.theme-portfolio .sidebar .nav-link:hover {
 }
 body.theme-index .some-linkit i {
     color: #00ffff;
+}
+body.theme-teknologiat .some-linkit i {
+    color: #afc6ff;
 }
 body.theme-portfolio .some-linkit i {
     color: #ede0c8;
@@ -359,6 +366,25 @@ body.theme-portfolio .some-linkit i:hover {
     background-color: transparent !important;
     color: #00ffff;
     border-bottom: 1px solid #fff600;
+}
+
+
+
+#section-teknologiat .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    pointer-events: none;
+}
+#section-teknologiat h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: #7fa6ff;
+    padding-top: 3rem;
+    text-align: center;
 }
 
 
