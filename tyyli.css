@@ -15,28 +15,8 @@ body.theme-taidot {
 }
 body.theme-portfolio {
     background-color: #4b3621;
-    z-index: -2;
 }
-/*body.theme-portfolio .gears-bg {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
-}
-.gear-top {
-    position: absolute;
-    height: ;
-}
-.gear-bottom {
-    position: absolute;
-    width: 70vw;
-}*/
-
+   
 
 
 .mobile-header {
@@ -377,9 +357,6 @@ body.theme-portfolio .some-linkit i:hover {
     color: #00ffff;
     border-bottom: 1px solid #fff600;
 }
-
-
-
 
 
 @media (max-width: 991px) {
