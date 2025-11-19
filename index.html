@@ -9,20 +9,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="tyyli.css">
     </head>
     <body>
         <!--mobile-header poistuu näkyvistä isommalla kuin 992px leveällä näytöllä-->
-        <div class="mobile-header d-lg-none">Software Developer Trainee</div>
+        <div class="mobile-header d-lg-none"><h6 class="m-0">Software Developer Trainee</h6></div>
 
         <!--sama tässä mobiili menu poistuu näkyvistä isommalla kuin 992px leveällä näytöllä-->
         <div class="mobile-bar d-lg-none">
-            <div>Jukka Palm</div>
+            <div><h4 class="m-0">Jukka Palm</h4></div>
             <button class="btn custom-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                 ☰
             </button>
@@ -31,38 +30,38 @@
         <!--offcanvas menu mobiilille-->
         <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
             <div class="offcanvas-header">
-                <div class="offcanvas-title">Jukka Palm</div>
+                <div class="offcanvas-title"><h4>Jukka Palm</h4></div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="nav flex-column gap-2">
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-index')">Tietoja minusta</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-taidot')">Taidot & Ohjelmointi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-portfolio')">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tietovisa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Terveystieto</a></li>
+                    <li class="nav-item"><h6><a class="nav-link" href="#" onclick="vaihdaTeema('theme-index')">Tietoja minusta</a></h6></li>
+                    <li class="nav-item"><h6><a class="nav-link" href="#" onclick="vaihdaTeema('theme-taidot')">Teknologiat</a></h6></li>
+                    <li class="nav-item"><h6><a class="nav-link" href="#" onclick="vaihdaTeema('theme-portfolio')">Portfolio</a></h6></li>
+                    <li class="nav-item"><h6><a class="nav-link" href="#">Tietovisa</a></h6></li>
+                    <li class="nav-item"><h6><a class="nav-link" href="#">Terveystieto</a></h6></li>
                 </ul>
             </div>
         </div>
 
         <nav class="sidebar d-none d-lg-flex flex-column">
             <div class="sidebar-top">
-                <div class="box nimi">Jukka Palm</div>
-                <div><h1 style="font-family: 'Libre Barcode 128 Text'; color: #fff600;">Software Developer Trainee</h1></div>
+                <div class="box nimi"><h1>Jukka Palm</h1></div>
+                <div class="box titteli"><h4>Software Developer Trainee</h4></div>
                 <div class="box navigaatio">
                     <ul class="nav flex-column gap-2">
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-index')">Tietoja minusta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-taidot')">Taidot & Ohjelmointi</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="vaihdaTeema('theme-portfolio')">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tietovisa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Terveystieto</a></li>
+                        <li class="nav-item"><h5><a class="nav-link" href="#" onclick="vaihdaTeema('theme-index')">Tietoja minusta</a></h5></li>
+                        <li class="nav-item"><h5><a class="nav-link" href="#" onclick="vaihdaTeema('theme-taidot')">Teknologiat</a></h5></li>
+                        <li class="nav-item"><h5><a class="nav-link" href="#" onclick="vaihdaTeema('theme-portfolio')">Portfolio</a></h5></li>
+                        <li class="nav-item"><h5><a class="nav-link" href="#">Tietovisa</a></h5></li>
+                        <li class="nav-item"><h5><a class="nav-link" href="#">Terveystieto</a></h5></li>
                     </ul>  
                 </div>  
             </div>
             <div class="some-linkit gap-3">
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <h4><a href="#"><i class="fa-solid fa-envelope"></i></a></h4>
+                <h4><a href="#"><i class="fa-brands fa-instagram"></i></a></h4>
+                <h4><a href="#"><i class="fa-brands fa-github"></i></a></h4>
             </div>
         </nav>
         <main class="main-content flex-grow-1">
@@ -73,12 +72,28 @@
                         <div class=" col-12 col-lg-10">
                             <div class="banner my-5">
                                 <div class="row mx-0">
-                                    <div class="col-12 col-lg-8 banner-txt bg-primary p-0">
+                                    <div class="col-12 col-lg-8 banner-txt p-0">
                                         <h1 class="index-otsikko">Tervetuloa sivuilleni</h1>
-                                        <p>Esittely tähän...</p>
+                                        <div id="slouganKaruselli" class="carousel-fade mt-4" data-bs-ride="carousel">
+                                            <div class="carousel-inner text-center">
+                                                <div class="carousel-item active">
+                                                    <h2>Rakennetaan yhdessä jotain siistiä!</h2>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2>Todellisuus on vain yksi käyttöliittymä.</h2>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2>Koodaa tulevaisuus-tai ole osa koodia.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-4 justify-content-center mt-5">
+                                            <a href="#" class="btn btn-banneri">Katso töitäni</a>
+                                            <a href="#" class="btn btn-banneri">Ota yhteyttä</a>
+                                        </div>
                                     </div>
 
-                                    <div class="col-12 col-lg-4 d-flex align-items-end banner-img bg-secondary p-0">
+                                    <div class="col-12 col-lg-4 d-flex align-items-end banner-img p-0">
                                         <img style="height: 300px;" src="images/aboutme-hero.png" alt="Jukka Palm Kuva">
                                     </div>
                                 </div>
@@ -87,13 +102,34 @@
                     </div>
 
                     <div>
-                        <h1 class="text-center">Tausta</h1>
+                        <h1>Tausta</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                        </p>
+                    </div>
+                    <div>
+                        <h1>Koulutus</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                 
+                 
+                        </p>
                     </div>
                 </div>
             </section>
 
             <section id="section-taidot" style="color: antiquewhite;">
-                <h1>Taidot & Ohjelmointi</h1>
+                <h1>Teknologiat</h1>
                 <p>Tässä osiossa kerron taidoistani</p>
             </section>
 

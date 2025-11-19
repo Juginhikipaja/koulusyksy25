@@ -20,6 +20,130 @@ body.theme-portfolio {
 
 
 
+.mobile-header {
+    position: fixed;
+    top: 0; left: 0;
+    height: 50px; width: 100%;
+    background: #222;
+    z-index: 2000;
+    display: flex; align-items: center; justify-content: center;
+}
+body.theme-index .mobile-header {
+    color: #fff600;
+    background-color: #1a1a22;
+    font-family: 'Chakra Petch', sans-serif;
+    text-shadow: 0 0 5px #fff600, 0 0 10px #fff600, 0 0 15px #fff600;
+}
+body.theme-taidot .mobile-header {
+    color: #aab0b8;
+    font-family: 'Source Code Pro', monospace;
+}
+body.theme-portfolio .mobile-header {
+    color: #d4af37;
+    font-family: 'IM Fell English SC', serif;
+}
+
+
+
+.mobile-bar {
+    position: fixed;
+    top: 50px; left: 0;
+    width: 100%; height: 55px;
+    background: #333;
+    display: flex; align-items: center; justify-content: space-between;
+    z-index: 2000;
+    color: #fff;
+    padding: 0 15px;
+}
+body.theme-index .mobile-bar {
+    background-color: #1a1a22;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #fff600;
+    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600,  0 0 15px #ffb600;
+}
+body.theme-taidot .mobile-bar {
+    color: #aab0b8;
+    font-family: 'Source Code Pro', monospace;
+}
+body.theme-portfolio .mobile-bar {
+    background-color: #3e4f2f;
+    font-family: 'IM Fell English SC', serif;
+    color: #d4af37;
+}
+
+
+
+.custom-hamburger {
+    background-color: #fff;
+    color: #222;
+    border: none;
+    font-size: 1.3rem;
+}
+body.theme-index .custom-hamburger {
+    background-color: #1a1a22;
+    color: #fff600;
+}
+body.theme-taidot .custom-hamburger {
+    background-color: transparent;
+    color: #aab0b8;
+}
+body.theme-portfolio .custom-hamburger {
+    background-color: #3e4f2f;
+    color: #d4af37;
+}
+
+
+
+body.theme-portfolio .offcanvas-header {
+    background-color: #3e4f2f;
+}
+
+
+
+body.theme-portfolio .offcanvas-body {
+    background-color: #3e4f2f;
+}
+
+
+
+body.theme-index .offcanvas-title {
+    color: #fff600;
+    font-family: 'Chakra Petch', sans-serif;
+    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 15px #ffb600;
+}
+body.theme-taidot .offcanvas-title {
+    color: #aab0b8;
+    font-family: 'Source Code Pro', monospace;
+}
+body.theme-portfolio .offcanvas-title {
+    font-family: 'IM Fell English SC', serif;
+    color: #d4af37;
+}
+
+
+
+body.theme-index .offcanvas-body a {
+    color: #fff600;
+    font-family: 'Chakra Petch', sans-serif;
+}
+body.theme-taidot .offcanvas-body a {
+    color: #aab0b8;
+    font-family: 'Source Code Pro', monospace;
+}
+body.theme-portfolio .offcanvas-body a {
+    color: #ede0c8;
+    font-family: 'Special Elite', system-ui;
+}
+
+
+
+#mobileMenu {
+    z-index: 2200;
+    top: 50px;
+}
+
+
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -46,6 +170,7 @@ body.theme-portfolio .sidebar {
 }
 
 
+
 .sidebar-top {
     display: flex;
     flex-direction: column;
@@ -53,6 +178,7 @@ body.theme-portfolio .sidebar {
     justify-content: center;
     text-align: center;
 }
+
 
 
 .sidebar-top .box {
@@ -68,7 +194,6 @@ body.theme-portfolio .sidebar {
 .nimi {
     text-align: center;
     cursor: pointer;
-    font-size: 1.8rem;
     margin-bottom: 2rem;
 }
 body.theme-index .sidebar .nimi {
@@ -78,13 +203,13 @@ body.theme-index .sidebar .nimi {
     transition: text-shadow 0.3s ease;
 }
 body.theme-taidot .sidebar .nimi {
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', monospace;
     color: #aab0b8;
 }
 body.theme-portfolio .nimi{
-    font-family: 'Playfair Display', serif;
+    font-family: 'IM Fell English SC', serif;
     color: #d4af37;
-    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -95,22 +220,22 @@ body.theme-index .nimi:hover {
 
 
 
-.sidebar-title {
+.sidebar .titteli {
     text-align: center;
-    font-size: 1.1rem;
     margin-bottom: 2rem;
 }
-body.theme-index .sidebar-title {
+body.theme-index .sidebar .titteli {
     color: #fff600;
     font-family: 'Chakra Petch', sans-serif;
 }
-body.theme-taidot .sidebar-title {
-    font-family: 'Source Code Pro';
+body.theme-taidot .sidebar .titteli {
+    font-family: 'Source Code Pro', monospace;
     color: #aab0b8;
 }
-body.theme-portfolio .sidebar-title {
-    color: #ede0c8;
-    font-family: 'Playfair Display', serif;
+body.theme-portfolio .sidebar .titteli {
+    color: #d4af37;
+    font-family: 'IM Fell English SC', serif;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -119,7 +244,6 @@ body.theme-portfolio .sidebar-title {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 0.8rem;
     border: 1px transparent;
 }
 body.theme-index .sidebar .nav-link {
@@ -127,14 +251,15 @@ body.theme-index .sidebar .nav-link {
     font-family: 'Chakra Petch', sans-serif;
 }
 body.theme-taidot .sidebar .nav-link {
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', monospace;
     color: #aab0b8;
 }
 body.theme-portfolio .sidebar .nav-link {
     color: #ede0c8;
-    font-family: 'IM Fell English', serif;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    font-family: 'Special Elite', system-ui;
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.6), 0px 2px 1px rgba(0, 0, 0, 0.4);
 }
+
 
 
 .nav-link:hover {
@@ -147,7 +272,6 @@ body.theme-index .sidebar .nav-link:hover {
 }
 body.theme-portfolio .sidebar .nav-link:hover {
     color: #bb7333;
-    text-shadow: 0 1px 0 #00000090, 0 -1px 0 #ffd7a0
 }
 
 
@@ -160,7 +284,6 @@ body.theme-portfolio .sidebar .nav-link:hover {
 
 
 .some-linkit i {
-    font-size: 1rem;
     transition: color 0.3s ease;
 }
 body.theme-index .some-linkit i {
@@ -184,148 +307,45 @@ body.theme-portfolio .some-linkit i:hover {
 
 
 
-.mobile-header {
-    position: fixed;
-    top: 0; left: 0;
-    height: 50px; width: 100%;
-    background: #222;
-    z-index: 2000;
-    padding: 0 15px;
-    display: flex; align-items: center; justify-content: center;
-}
-body.theme-index .mobile-header {
-    color: #fff600;
-    background-color: #1a1a22;
-    font-family: 'Chakra Petch';
-    text-shadow: 0 0 5px #fff600, 0 0 10px #fff600, 0 0 15px #fff600;
-}
-body.theme-taidot .mobile-header {
-    color: #aab0b8;
-    font-family: 'Source Code Pro';
-}
-body.theme-portfolio .mobile-header {
-    background-color: #3e4f2f;
-    color: #ede0c8;
-    text-shadow: 1px 1px 0 #c5b89c, -1px -1px 0 #fff9e6;
-    font-family: 'Playfair Display', serif;
+#section-index .banner {
+    border: 2px solid #00ffff;
+    border-radius: 1rem;
+    background-color: #111217;
 }
 
 
 
-.mobile-bar {
-    position: fixed;
-    top: 50px; left: 0;
-    width: 100%; height: 55px;
-    background: #333;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 15px;
-    z-index: 2000;
-    color: #fff;
-    font-size: 1.2rem;
-}
-body.theme-index .mobile-bar {
-    background-color: #1a1a22;
-    font-family: 'Chakra Petch', sans-serif;
-    color: #fff600;
-    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600,  0 0 15px #ffb600;
-}
-body.theme-taidot .mobile-bar {
-    color: #aab0b8;
-    font-family: 'Source Code Pro';
-}
-body.theme-portfolio .mobile-bar {
-    background-color: #3e4f2f;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    color: #d4af37;
-    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
+#section-index .banner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-.custom-hamburger {
-    background-color: #fff;
-    color: #222;
-    border: none;
-    font-size: 1.2rem;
-}
-body.theme-index .custom-hamburger {
-    background-color: #1a1a22;
-    color: #fff600;
-}
-body.theme-taidot .custom-hamburger {
-    background-color: transparent;
-    color: #aab0b8;
-}
-body.theme-portfolio .custom-hamburger {
-    background-color: #3e4f2f;
-    color: #d4af37;
-    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
-}
-
-
-
-#mobileMenu {
-    z-index: 2200;
-    top: 50px;
-}
-
-
-
-body.theme-portfolio .offcanvas-header {
-    background-color: #3e4f2f;
-}
-
-
-
-body.theme-portfolio .offcanvas-body {
-    background-color: #3e4f2f;
-}
-
-
-
-.offcanvas-title {
-    font-size: 1.2rem;
-}
-body.theme-index .offcanvas-title {
-    color: #fff600;
-    font-family: 'Chakra Petch', sans-serif;
-    text-shadow: 0 0 5px #ffb600, 0 0 10px #ffb600, 0 0 15px #ffb600;
-}
-body.theme-taidot .offcanvas-title {
-    color: #aab0b8;
-    font-family: 'Source Code Pro';
-}
-body.theme-portfolio .offcanvas-title {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-    text-shadow: 1px 1px 0 #b87333, -1px -1px 0 #ffe699;
-    font-weight: bold;
-}
-
-
-
-body.theme-index .offcanvas-body a {
-    color: #fff600;
-    font-family: 'Chakra Petch', sans-serif;
-}
-body.theme-taidot .offcanvas-body a {
-    color: #aab0b8;
-    font-family: 'Source Code Pro';
-}
-body.theme-portfolio .offcanvas-body a {
-    color: #ede0c8;
-    font-family: 'IM Fell English', serif;
-}
 
 #section-index h1 {
     font-family: 'Chakra Petch', sans-serif;
     color: #fff600;
+    text-align: center;
 }
 
-#section-index .banner {
-    border: 2px solid #00ffff;
+
+
+#section-index, #slouganKaruselli {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #00ffff;
+    width: 100%;
+    text-align: center;
 }
+
+
+
+#section-index .btn-banneri {
+    color: magenta;
+    border: 1px solid magenta;
+}
+
+
 
 #section-index .banner-img {
     justify-content: center;
@@ -333,36 +353,19 @@ body.theme-portfolio .offcanvas-body a {
 
 
 
-
-
 @media (max-width: 991px) {
     main { margin-left: 0; margin-top: 105px; }
 }
-
 @media (min-width: 1200px) {
     main { margin-left: 280px; }
     .sidebar { width: 280px; }
-    .some-linkit i { font-size: 1.5rem; }
-    .sidebar .nimi { font-size: 2.5rem; }
-    .sidebar-title { font-size: 1.4rem; }
-    .sidebar .nav-link { font-size: 1.2rem; }
 }
-
 @media (min-width: 1920px) {
     main { margin-left: 380px; }
     .sidebar { width: 380px; padding-top: 4rem; padding-bottom: 4rem; }
-    .some-linkit i { font-size: 2rem; }
-    .sidebar .nimi { font-size: 3.5rem; }
-    .sidebar-title { font-size: 1.9rem; }
-    .sidebar .nav-link { font-size: 1.7rem; }
     body.theme-index .sidebar { border-right: 4px solid #fff600; box-shadow: 0 0 8px #fff600, 0 0 16px #fff600; }
 }
-
 @media (min-width: 2560px) {
     main { margin-left: 500px; }
     .sidebar { width: 500px; padding-bottom: 6rem;}
-    .some-linkit i { font-size: 2.5rem; }
-    .sidebar .nimi { font-size: 4.4rem; }
-    .sidebar-title { font-size: 2.5rem;}
-    .sidebar .nav-link { font-size: 2.3rem; }
 }
