@@ -351,6 +351,13 @@ body.theme-portfolio .some-linkit i:hover {
     justify-content: center;
 }
 
+#section-index table.table,
+#section-index table.table th,
+#section-index table.table td {
+    background-color: transparent !important;
+    color: #00ffff;
+    border-bottom: 1px solid #fff600;
+}
 
 
 @media (max-width: 991px) {
