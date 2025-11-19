@@ -7,9 +7,9 @@ body.theme-index {
     background-color: #0a0a0f;
 }
 body.theme-taidot {
-    background-image: url(images/taustakuva.png);
+    background-image: url(images/piirilevy.png);
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -161,6 +161,7 @@ body.theme-index .sidebar {
 }
 body.theme-taidot .sidebar {
     background-color: #101218;
+    opacity: 0.5;
 }
 body.theme-portfolio .sidebar {
     background-color: #3e4f2f;
