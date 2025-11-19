@@ -351,6 +351,8 @@ body.theme-portfolio .some-linkit i:hover {
     justify-content: center;
 }
 
+
+
 #section-index table.table,
 #section-index table.table th,
 #section-index table.table td {
@@ -358,6 +360,62 @@ body.theme-portfolio .some-linkit i:hover {
     color: #00ffff;
     border-bottom: 1px solid #fff600;
 }
+
+
+
+#section-portfolio {
+    width: 100%;
+    height: 100%;
+}
+#section-portfolio .isoratas {
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.3;
+}
+#section-portfolio .isoratas1 img,
+#section-portfolio .isoratas3 img {
+    height: 100vh;
+    animation: rotateCW 120s linear infinite;
+}
+#section-portfolio .isoratas2 img,
+#section-portfolio .isoratas4 img {
+    height: 100vh;
+    animation: rotateCCW 120s linear infinite;
+}
+#section-portfolio .isoratas1 {
+    transform: translate(-50%, -50%);
+}
+#section-portfolio .isoratas2 {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+#section-portfolio .isoratas3 {
+    right: 0;
+    transform: translate(50%, 50%);
+}
+#section-portfolio .isoratas4 {
+    transform: translate(-50%, 50%);
+}
+@keyframes rotateCW {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes rotateCCW {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg);}
+}
+
+
+
+#section-portfolio h1 {
+    font-family: 'IM Fell English SC', serif;
+    color: #d4af37;
+    padding-top: 3rem;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
 
 
 @media (max-width: 991px) {
